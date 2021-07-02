@@ -444,12 +444,9 @@ body {
 
 /* Footer */
 
-.container .cont-footer {
+.cont-footer {
   display: flex;
-  flex-direction: column;
-  height: 252px;
-  margin: 0 auto;
-}
+} 
 
 .nav-footer:not(:last-child) {
   margin-bottom: 9px;
@@ -510,11 +507,16 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  margin-bottom: 20px;
 }
 
-.listf {
+.listf1 {
   display: flex;
   flex-direction: column;
+}
+
+.listf2 {
+  display: flex;
 }
 
 .link-social-footer {
@@ -536,6 +538,10 @@ body {
 
 .icon-social-footer-list:not(:last-child) {
   margin-right: 10px;
+}
+
+.cont-social {
+  display: flex;
 }
 
 .buttons {
