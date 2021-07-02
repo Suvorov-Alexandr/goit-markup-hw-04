@@ -7,6 +7,7 @@
   --dark-background-color: #2F303A;
   --footer-address: rgba(255, 255, 255, 0.6);
   --main-font: "Roboto", sans-serif;
+  --icon-color: #afb1b8;
 }
 
 .list {
@@ -174,7 +175,7 @@ body {
 }
 
 .hero-title {
-  color: #ffffff;
+  color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -185,7 +186,7 @@ body {
 }
 
 .btn{
-  color: #ffffff;
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -393,6 +394,18 @@ body {
 
 .link-social {
   text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--icon-color);
+}
+
+.link-social:hover {
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color);
 }
 
 /* Regular clients */
@@ -403,9 +416,12 @@ body {
 
 .icon-clients-list{
   width: 170px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
-  padding: 16px 32px;
+}
+
+.icon-clients-list:hover {
+  border: 1px solid var(--accent-color);
 }
 
 .icon-clients-list:not(:last-child) {
@@ -414,6 +430,16 @@ body {
 
 .link-clients {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  fill: var(--icon-color);
+}
+
+.link-clients:hover {
+  fill: var(--accent-color);
 }
 
 /* Footer */
@@ -473,6 +499,43 @@ body {
 .address-contacts:focus,
 .address-contacts:hover{
   color: var(--primary-white-color);
+}
+
+.text{
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.listf {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-social-footer {
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.link-social-footer:hover {
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color);
+}
+
+.icon-social-footer-list:not(:last-child) {
+  margin-right: 10px;
 }
 
 .buttons {
