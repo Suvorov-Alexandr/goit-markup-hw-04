@@ -445,6 +445,7 @@ body {
 
 .cont-footer {
   display: flex;
+  align-items: baseline;
 } 
 
 .nav-footer:not(:last-child) {
